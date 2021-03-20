@@ -5,9 +5,9 @@ const form = document.querySelector(".signup form"),
 form.onsubmit = (e) => {
     e.preventDefault(); // Preventing  Form from submitting
 }
+
 continueBtn.onclick = () => {
     // ajax
-
     let xhr = new XMLHttpRequest(); // Create XML Object
     xhr.open("POST", "php/signup.php");
     xhr.onload = () => {

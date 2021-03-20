@@ -36,5 +36,7 @@
     </section>
 </div>
 
-<?php include_once "php/loginSignup.inc.php" ?>
+<script src="js/signup.js"></script>
+<script src="js/pass-show-hide.js"></script>
+
 <?php include_once "php/footer.inc.php" ?>

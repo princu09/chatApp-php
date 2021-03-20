@@ -24,7 +24,7 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
 
                 // let's explore image and get the last extension like jpg png
                 $img_exlode = explode('.', $img_name);
-                $img_ext = end($img_exlode); // here we get the extension of an user upload img file
+                $img_ext = strtolower(end($img_exlode)); // here we get the extension of an user upload img file
 
                 $extensions = ['png', 'jpeg', 'jpg']; // these are some valid img ext and we've store them in array
                 if (in_array($img_ext, $extensions) === true) { // if user uploaded img ext is matched with any array extensions
@@ -35,6 +35,7 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
                     $new_img_name = $time.$img_name;
                     
                     $upload_dir = "images/$new_img_name";
+                    
                     if(move_uploaded_file($tmp_name, $upload_dir )) { // if user upload img move to our folder successfully
 
                         $status = "Active Now"; // once user signed up then his status will be active now

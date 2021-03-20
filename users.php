@@ -10,6 +10,7 @@ if (!isset($_SESSION['unique_id'])) {
 <div class="wrapper">
     <section class="users">
         <header>
+
             <?php
             include_once "php/config.php";
             $sql = mysqli_query($connect, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
@@ -18,6 +19,7 @@ if (!isset($_SESSION['unique_id'])) {
                 $row = mysqli_fetch_assoc($sql);
             }
             ?>
+
             <div class="content">
                 <img src="php/images/<?php echo $row['img'] ?>" alt="">
                 <div class="details">
@@ -25,7 +27,7 @@ if (!isset($_SESSION['unique_id'])) {
                     <p><?php echo $row['status']; ?></p>
                 </div>
             </div>
-            <a href="#" class="logout">Logout</a>
+            <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
         </header>
         <div class="search">
             <span class="text">Select an user to start chat</span>
@@ -33,7 +35,7 @@ if (!isset($_SESSION['unique_id'])) {
             <button><i class="fas fa-search"></i></button>
         </div>
         <div class="users-list">
-            
+
         </div>
     </section>
 </div>
