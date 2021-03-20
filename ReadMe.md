@@ -54,8 +54,8 @@ ChatApp
 ```
 ###### Screenshot :
 
-![Image 1](./screenshot/image1.png)
-![Image 1](./screenshot/image2.png)
-![Image 1](./screenshot/image3.png)
-![Image 1](./screenshot/image4.png)
-![Image 1](./screenshot/image5.png)
+![Image 1](https://raw.githubusercontent.com/princu09/chatApp-php/main/screenshot/image1.PNG)
+![Image 1](https://raw.githubusercontent.com/princu09/chatApp-php/main/screenshot/image2.PNG)
+![Image 1](https://raw.githubusercontent.com/princu09/chatApp-php/main/screenshot/image3.PNG)
+![Image 1](https://raw.githubusercontent.com/princu09/chatApp-php/main/screenshot/image4.PNG)
+![Image 1](https://raw.githubusercontent.com/princu09/chatApp-php/main/screenshot/image5.PNG)
