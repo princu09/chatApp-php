@@ -14,6 +14,13 @@ if (!empty($email) && !empty($password)) {
         $row = mysqli_fetch_assoc($sql);
         $_SESSION['unique_id'] = $row['unique_id']; // using this session we used user unique_id other php file
         echo "success";
+
+        $getId = $_SESSION['unique_id'];
+
+        $status = "Active Now";
+        
+        $sql2 = mysqli_query($connect, "UPDATE users SET status = '{$status}' WHERE unique_id={$getId}");
+
     }else {
         echo "Email or Password is incorrenct !";
     }

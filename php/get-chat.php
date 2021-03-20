@@ -33,7 +33,7 @@ if (isset($_SESSION['unique_id'])) {
             echo $output; 
         }
     }else {
-        echo "Something Wrong !"; 
+        echo "No Chat Data !"; 
     }
 } else {
     header("../login.php");
